@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="javascript-juego.css" />
+    <link rel="icon" type="image/x-icon" href="img/favicon-16x16.png">
+    <title>El donut de Homer Simpson</title>
+  </head>
+  <body>
+
+    <div class="pagina1" onload="aparicionPagina1()">
+      <div class="div-texto-1">
+        <p>
+        En la tranquila ciudad de Springfield, donde las aventuras cotidianas se
+        mezclan con lo absurdo, un día común se ve sacudido por un evento
+        inusual que despierta la curiosidad de Homer Simpson y su singular
+        familia.
+        </p>
+      </div>
+      <input type="button" id="next1" value="CONTINUAR" />
+    </div>
+
+    <div class="pagina2">
+      <div class="div-texto-2">
+        <p>
+        Ese día, un estruendo sacudió Springfield, llevando a Homer y Barney a
+        descubrir un gigantesco donut rosado que desafió la lógica. Sin dudarlo,
+        Homer corrió hacia él, ansioso por hincarle el diente.
+        </p>
+      </div>
+      <input type="button" id="next2" value="CONTINUAR" />
+    </div>
+
+    <div class="pagina3">
+        <div class="div-texto-3">
+          <p>
+            Antes de que pudieran reaccionar, el donut se deslizó de las manos de Homer, emprendiendo una carrera descontrolada por las calles de la ciudad, dejando tras de sí un rastro de glaseado y caos mientras Homer lo perseguía, con la boca hecha agua.
+          </p>
+        </div>
+        <input type="button" id="next3" value="CONTINUAR" />
+    </div>   
+
+    <div class="pagina4">
+        <div class="div-texto-4">
+            <h1 id="titulo">El donut de Homer Simpson</h1>
+            <input type="button" id="startPlay" value="START" />
+            <p id="empezar">Pulsa el botón para empezar</p>
+            <p id="explicacion">Al acceder al juego, pulsa ENTER para empezar y pulsa SPACE para atrapar al donut. Al llegar a 10 puntos, el juego habrá terminado.</p>
+        </div>
+    </div>   
+
+    <div class="pagina5" id="animacionPag5">
+      <div id="contador">Puntos: 0</div> 
+      <img src="/img/simpson.gif" alt="homer" id="homer" />
+      <img src="/img/donut.png" alt="donut" id="donuts">
+    </div>
+
+    <div class="pagina6">
+      <div class="div-texto-6">
+          <h1 id="titulo-final">¡Felicidades! ¡Has atrapado el donut!</h1>
+          <input type="button" id="reinicio" value="REINICIA" />
+      </div>
+  </div>   
+
+    <script src="javascript-juego.js"></script>
+  </body>
+</html>
